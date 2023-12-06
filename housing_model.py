@@ -26,4 +26,5 @@ with open('test.csv', newline='\n') as csvfile:
 
 # print(test_df.head())
 # print(train_df.head())
+df_encoded = pd.get_dummies(train_df, columns=['HouseStyle'], prefix='HouseStyle', drop_first=True)
 
